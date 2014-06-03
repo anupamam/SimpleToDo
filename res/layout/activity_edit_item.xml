@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="codepath.apps.simpletodo.EditItemActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <TextView
+        android:id="@+id/txtEditItem"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:text="Edit Item Below" />
+    <EditText
+        android:id="@+id/etEditItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEditItem"
+        android:ems="10"
+        android:inputType="textMultiLine" >
+		
+       
+    </EditText>
+
+    <Button
+        android:id="@+id/btnSaveItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etEditItem"
+        android:layout_alignLeft="@+id/etEditItem"
+        android:onClick="saveItem"
+        android:text="Save" />
+
+    
+
+</RelativeLayout>
